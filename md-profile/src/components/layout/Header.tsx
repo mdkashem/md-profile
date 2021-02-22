@@ -1,9 +1,13 @@
-import React from "react";
+import React from 'react';
 import Nav from './Nav';
-const Header = () =>{
-    return<head>
-      <MobileNav />
-        <strong className="logo">GoShopping!</strong>
+import NavLogin from './NavLogin';
+import MobileNav from './MobileNav';
+import { colors } from '../../styles';
+
+const Header = () => {
+    return <header>
+        <MobileNav />
+        <strong className="logo">ExamPro</strong>
         <Nav />
         <NavLogin />
 
@@ -25,6 +29,8 @@ const Header = () =>{
                 left: .9rem;
                 user-select: none;
             }
-        `}</style>  
-    </head>
+        `}</style>
+    </header>
 }
+
+export default Header;

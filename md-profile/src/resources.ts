@@ -12,3 +12,10 @@ export const routes = {
     STORE: '/items',
     USERS: '/users'
 }
+export const apiRoutes : any = Object.entries({
+    LOG_IN: '/login',
+    ORDER: '/order',
+    USER: '/user',
+    ITEM: '/item',
+    TAG: '/tags',
+}).reduce((acc, cur) => ({ ...acc, [cur[0]]: API + cur[1] }), {});
